@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 35px 12%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 25px;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+.logo:hover{
+    color: rgb(225, 12, 133);
+    text-shadow: 0 0 25px rgb(225, 12, 133),
+                 0 0 50px rgb(225, 12, 133);
+    transform: scale(1.1);
+}
+span{
+    color: rgb(225, 12, 133);
+}
+.navbar a{
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+.navbar a:hover,
+.navbar a.active{
+    color: rgb(225, 12, 133);
+    border-bottom: 3px solid rgb(225, 12, 133);
+}
+.contact{
+    padding: 10px 28px;
+    background-color: #fff;
+    color: #000;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+.contact:hover{
+    color: #fff;
+    background-color: rgb(22, 229, 252);
+    box-shadow: 0 0 25px rgb(22, 229, 252);
+}
+/* home */
+.home{
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(241, 241, 241);
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 30px 12% 0;
+}
+.home-content{
+    max-width: 800px;
+}
+.home-content h3{
+    font-size: 42px;
+}
+.home-content h1{
+    font-size: 62px;
+    line-height: 1.2;
+}
+.home-content p{
+    font-size: 18px;
+    margin: 25px 0 30px;
+}
+
+.btn-box{
+    width: 345px;
+    display: flex;
+    gap: 2em;
+}
+.btn-1{
+    padding: 15px 28px;
+    background-color: #000;
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.btn-1:hover{
+    background-color: rgb(225, 12, 133);
+    color: #000;
+    border: 2px solid #000;
+}
+
+.btn-2{
+    padding: 15px 28px;
+    background-color: rgb(18, 224, 251);
+    color: #fff;
+    border: 2px solid #000;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.btn-2:hover{
+    background-color: #fff;
+    color: orangered;
+}
+.img-box img{
+    border-radius: 50%;
+    width: 500px;
+}
+
+ /* About */
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12% 8%;
+    gap:10em;
+    background: #000;
+}
+.about-img img{
+    position: relative;
+    width: 400px;
+    box-shadow: 0 0 25px rgb(27, 221, 199),
+                0 0 50px rgb(27, 221, 199);
+    border-radius: 50%;
+}
+.about-content h2{
+    text-align: left;
+    color: #fff;
+    font-size: 42px;
+}
+.about-content h3{
+    font-size: 62px;
+    color: #fff;
+}
+.about-content p{
+    color: #fff;
+    font-size: 20px;
+    margin: 2em 0 3em;
+}
+
+
+/* Skills  */
+
+.skill h1{
+    text-align: center;
+    background-color: darkcyan;
+    color: #fff;
+    border-radius: 10px;
+    font-family: "Jacques Francois Shadow", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px
+}
+.skill h3{
+    margin: 5px;
+}
+.skill{
+    background: #333;
+    text-transform: uppercase;
+    width: 500px;
+    margin: 60px auto;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    border-radius: 10px;
+}
+.skill li{
+    margin: 20px 0;
+    padding: 10px;
+}
+.bar{
+    background: #353b48;
+    display: block;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0,12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.bar:hover{
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.bar span{
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg, rgba(236, 0, 140, 1)0%, rgba(252, 0, 0, 1.0));
+}
+.html{
+    width: 100%;
+    animation: html 3s;
+}
+.css{
+    width: 70%;
+    animation: css 3s;
+}
+.php{
+    width: 60%;
+    animation: php 3s;
+}
+.javascript{
+    width: 45%;
+    animation: css 3s;
+}
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 95%;
+    }
+}
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+@keyframes php{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+@keyframes javascript{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 45%;
+    }
+}
+/* Projects*/
+.project-name-item img{
+    width: 40%;
+    border-radius: 10px;
+}
+.project-name ul{
+    display: grid;
+    grid-template-columns: auto auto ;
+    padding: 20 px;
+    list-style:none;
+ }
+ .project-name-item{
+    padding:40px;
+    background-color: rgba(227, 228, 235, 0.8);
+    border: 1px solid rgba(144, 155, 191, 0.8);
+    padding: 20px;
+    font-size: 15px;
+    text-align: center;
+    margin:20px 30px 20px 30px;
+    border-radius: 4%;
+    border: solid rgb(225, 12, 133);
+}
+
+.project-name-item a{
+    text-decoration: none;
+    text-transform: uppercase;
+    border:2px solid rgb(225, 12, 133);
+    border-radius:10%;
+    background-color: rgb(225, 12, 133);
+    padding:4px;
+    font-size:15px;
+    font-weight:bold;
+    font-family:Arial, Helvetica, sans-serif;
+    bottom:0;
+    color:rgb(26, 25, 25);
+}
+#project{
+    text-align: center;
+    padding: 20px 40px;
+}
+
+/* Resume */
+
+.resume-link{
+    margin:20px 200px 0px 200px;
+    height:400px;
+    background-color: rgb(210, 208, 205);
+    border-radius:15%;
+    border:4px solid  rgb(225, 12, 133) ;
+    padding-top:100px;
+    background-image: url(image/resume\ back.jpg);
+    background-position: center;
+    background-size: cover;
+ }
+
+ .resume-link a{
+    position :relative;
+    margin-left:320px;
+    font-size: 30px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:black;
+    border:2px dotted rgb(28, 27, 27);
+    border-radius:20px;
+    padding:10px 30px 10px 30px;
+    background-color:antiquewhite;
+    text-transform:uppercase ;
+
+}
+
+.resume-link a:hover{
+    background-color: rgb(219, 237, 222);
+    padding:12px 32px 12px 32px;
+}
+#resume h1{
+    text-align: center;
+}
+
+
+/* Contact Form  */
+
+.contact-form h2{
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    font-size: 40px;
+}
+
+.contact-form form{
+    max-width: 50em;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3em;
+}
+.contact-form form .input-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-form form .input-box input,
+.contact-form form textarea{
+    width: 100%;
+    padding: 1.5em;
+    font-size: 18px;
+    color: #000;
+    background: rgb(241, 241, 241);
+    border-radius: 0.8em;
+    margin: 1rem 0;
+    resize: none;
+
+}
+
+/* Copyright */
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: #000;
+}
+
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: #fff;
+}
+.footer .social a{
+    font-size: 24px;
+    color: #fff;
+    border: 2px solid orangered;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    box-shadow: inset 0 0 10px orangered, 0 0 10px orangered;
+    transition: 0.3s ease;
+}
+
+.footer .social a:hover{
+    transform: scale(1.2) translateY(-10px);
+    color: orangered;
+    border: 2px solid orangered;
+}
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+.footer ul li a{
+    color: #fff;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+.footer ul li a:hover{
+    border-bottom: 3px solid orangered;
+}
+.footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+.footer .copyright{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+}
